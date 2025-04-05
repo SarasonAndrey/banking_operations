@@ -13,7 +13,7 @@ def mask_account_card(name_number: str) -> str:
         else:
             number_card += i
             if "Счет" in name_card:
-                return f"{name_card} {get_mask_account(name_number)}"
+                return f"{name_card} {get_mask_account(number_card)}"
     return f"{name_card} {get_mask_card_number(number_card)}"
 
 
