@@ -98,6 +98,6 @@ def test_filter_by_state(list_dictionaries, new_list_dictionaries):
             ],
         )
     ],
-pr)
+)
 def test_sort_by_date(list_dictionaries, new_list_sort_by_date):
     assert sort_by_date(list_dictionaries) == new_list_sort_by_date
