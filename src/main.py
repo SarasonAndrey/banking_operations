@@ -1,5 +1,7 @@
 from pprint import pprint
 
+from src.data import list_of_transaction_dictionaries
+from src.generators import filter_by_currency
 from src.masks import get_mask_account, get_mask_card_number
 from src.processing import filter_by_state, sort_by_date
 from src.widget import get_date, mask_account_card
@@ -14,7 +16,7 @@ if __name__ == "__main__":
     print(mask_account_card("Maestro 1596837868705199"))
 
     print(get_date("2024-03-11T02:26:18.671407"))
-
+    print('//' * 50)
     pprint(
         filter_by_state(
             [
@@ -41,7 +43,7 @@ if __name__ == "__main__":
             ]
         )
     )
-
+    print('//' * 50)
     pprint(
         sort_by_date(
             [
@@ -68,3 +70,10 @@ if __name__ == "__main__":
             ]
         )
     )
+    print('//' * 50)
+    pprint(next(filter_by_currency(list_of_transaction_dictionaries)))
+    print('//' * 50)
+    pprint(next(filter_by_currency(list_of_transaction_dictionaries)))
+    print('//' * 50)
+    pprint(next(filter_by_currency(list_of_transaction_dictionaries)))
+    print('//' * 50)
