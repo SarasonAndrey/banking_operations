@@ -16,7 +16,7 @@ if __name__ == "__main__":
     print(mask_account_card("Maestro 1596837868705199"))
 
     print(get_date("2024-03-11T02:26:18.671407"))
-    print('//' * 50)
+    print("//" * 50)
     pprint(
         filter_by_state(
             [
@@ -43,7 +43,7 @@ if __name__ == "__main__":
             ]
         )
     )
-    print('//' * 50)
+    print("//" * 50)
     pprint(
         sort_by_date(
             [
@@ -72,20 +72,20 @@ if __name__ == "__main__":
     )
 
     result_code = filter_by_currency(list_of_transaction_dictionaries)
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_code))
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_code))
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_code))
-    print('//' * 50)
+    print("//" * 50)
 
     result_description = transaction_descriptions(list_of_transaction_dictionaries)
     pprint(next(result_description))
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_description))
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_description))
-    print('//' * 50)
+    print("//" * 50)
     pprint(next(result_description))
-    print('//' * 50)
+    print("//" * 50)
