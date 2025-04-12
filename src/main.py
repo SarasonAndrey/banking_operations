@@ -93,7 +93,7 @@ if __name__ == "__main__":
     pprint(next(result_description))
     print("/=" * 50)
 
-    generator_nambers = card_number_generator(100, 9999999999999999)
+    generator_nambers = card_number_generator(1, 9999999999999999)
     print(next(generator_nambers))
     print(next(generator_nambers))
     print(next(generator_nambers))
