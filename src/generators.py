@@ -25,6 +25,6 @@ def transaction_descriptions(
 
 def card_number_generator(start: int, end: int) -> str:
     for i in range(start, end + 1):
-        count_0 = "0" * (16 - len(str(i)))
-        number = count_0 + str(i)
-        yield number
+        count_0 = str(i).zfill(16)
+
+        yield count_0

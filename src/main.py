@@ -10,14 +10,16 @@ from src.widget import get_date, mask_account_card
 if __name__ == "__main__":
     print(get_mask_card_number("7000792289606361"))
     print(get_mask_account("73654108430135874305"))
+    print("/=" * 50)
 
     print(mask_account_card("Visa Platinum 7000792289606361"))
     print(mask_account_card("Счет 73654108430135874305"))
     print(mask_account_card("MasterCard 7158300734726758"))
     print(mask_account_card("Maestro 1596837868705199"))
+    print("/=" * 50)
 
     print(get_date("2024-03-11T02:26:18.671407"))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(
         filter_by_state(
             [
@@ -44,7 +46,7 @@ if __name__ == "__main__":
             ]
         )
     )
-    print("//" * 50)
+    print("/=" * 50)
     pprint(
         sort_by_date(
             [
@@ -73,23 +75,23 @@ if __name__ == "__main__":
     )
 
     result_code = filter_by_currency(list_of_transaction_dictionaries)
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_code))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_code))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_code))
-    print("//" * 50)
+    print("/=" * 50)
 
     result_description = transaction_descriptions(list_of_transaction_dictionaries)
     pprint(next(result_description))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_description))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_description))
-    print("//" * 50)
+    print("/=" * 50)
     pprint(next(result_description))
-    print("//" * 50)
+    print("/=" * 50)
 
     generator_nambers = card_number_generator(1, 9999999999999999)
     print(next(generator_nambers))
@@ -97,4 +99,4 @@ if __name__ == "__main__":
     print(next(generator_nambers))
     print(next(generator_nambers))
     print(next(generator_nambers))
-    print("//" * 50)
+    print("/=" * 50)
